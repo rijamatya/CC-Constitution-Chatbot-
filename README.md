@@ -20,13 +20,12 @@ The chatbot ensures that responses are grounded in the provided document rather 
 
 ## Technologies Used
 
-- Python
-- Streamlit (for user interface)
-- SentenceTransformers (for embeddings)
-- FAISS (for vector similarity search)
-- Ollama (LLaMA3) or Hugging Face Transformers (LLM)
-- PyPDF (for PDF text extraction)
-
+a. Python
+b. Streamlit (for UI)
+c. SentenceTransformers (for embeddings)
+d. FAISS (for vector search)
+e. Ollama (LLaMA3) (for response generation)
+f. PyPDF (for extracting text from PDF)
 ---
 
 ## How It Works (RAG Pipeline)
@@ -44,21 +43,7 @@ The system follows a Retrieval-Augmented Generation pipeline:
 
 ---
 
-## Architecture
 
-User Query  
-↓  
-Embedding Generation  
-↓  
-FAISS Vector Search  
-↓  
-Relevant Document Chunks  
-↓  
-LLM (LLaMA3 / Hugging Face Model)  
-↓  
-Final Answer
-
----
 
 ## Features
 
@@ -71,10 +56,3 @@ Final Answer
 
 ---
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/constitution-rag-chatbot.git
-cd constitution-rag-chatbot
